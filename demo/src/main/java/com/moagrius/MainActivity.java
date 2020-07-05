@@ -26,7 +26,9 @@ public class MainActivity extends Activity implements FileCopier.Listener {
     findViewById(R.id.textview_demos_tileview_external).setOnClickListener(view -> showStorageDemoOrWarning(Helpers.EXTERNAL_STORAGE_KEY, Environment.getExternalStorageDirectory(), TileViewDemoExternalStorage.class));
     findViewById(R.id.textview_demos_tileview_remote).setOnClickListener(view -> startDemo(TileViewDemoHttp.class));
     findViewById(R.id.textview_demos_tileview_assets).setOnClickListener(view -> startDemo(TileViewDemoAssets.class));
-    findViewById(R.id.textview_demos_tileview_advanced).setOnClickListener(view -> startDemo(TileViewDemoAdvanced.class));
+    findViewById(R.id.textview_demos_xml).setOnClickListener(view -> startDemo(TileViewDemoAdvanced.class));
+    findViewById(R.id.textview_demos_gaode).setOnClickListener(view -> startDemo(GaoDeDemoActivity.class));
+    findViewById(R.id.textview_demos_xml).setOnClickListener(view -> startDemo(TileViewDemoXmlActivity.class));
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
       String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
       requestPermissions(permissions, WRITE_REQUEST_CODE);

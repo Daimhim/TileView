@@ -7,9 +7,6 @@ import android.graphics.CornerPathEffect;
 import android.graphics.Paint;
 import android.graphics.Point;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.TypedValue;
@@ -17,6 +14,10 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.ViewCompat;
 
 import com.moagrius.tileview.TileView;
 import com.moagrius.tileview.plugins.CoordinatePlugin;

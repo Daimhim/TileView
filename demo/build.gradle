@@ -4,7 +4,7 @@ android {
   compileSdkVersion 28
   defaultConfig {
     applicationId "com.moagrius"
-    minSdkVersion 19
+    minSdkVersion 21
     targetSdkVersion 28
     versionCode 1
     versionName "1.0"
@@ -26,10 +26,17 @@ repositories {
   maven {
     url "https://dl.bintray.com/moagrius/maven"
   }
+  maven {
+    url 'https://esri.bintray.com/arcgis'
+  }
 }
 
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
-  implementation 'com.android.support:appcompat-v7:28.0.0'
   implementation project(path: ':tileview')
+  implementation 'com.amap.api:3dmap:5.0.0'
+  implementation 'com.amap.api:location:5.0.0'
+  implementation 'com.amap.api:search:7.3.0'
+  implementation 'com.esri.arcgisruntime:arcgis-android:100.8.0'
+  implementation 'com.android.support:appcompat-v7:28.0.0'
 }

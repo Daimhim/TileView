@@ -34,6 +34,16 @@
         style="@style/DemoRow"
         android:background="#FFFFF0F2"
         android:text="TileView Demo (Advanced)" />
+    <TextView
+        android:id="@+id/textview_demos_gaode"
+        style="@style/DemoRow"
+        android:background="#FFFFF0F2"
+        android:text="高德 Demo (Advanced)" />
+    <TextView
+        android:id="@+id/textview_demos_xml"
+        style="@style/DemoRow"
+        android:background="#FFFFF0F2"
+        android:text="arcGIS for Android(url)" />
 
   </LinearLayout>
 
